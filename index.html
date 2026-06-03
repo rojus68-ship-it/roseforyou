@@ -8,46 +8,46 @@
 </head>
 <body>
 
-  <main class="page">
-    <section class="hero">
-      <h1>Šiandien pagalvojau apie tave...</h1>
-      <p>Kartais žinome, ką jaučiame. Tik nerandame tinkamų žodžių.</p>
-      <p class="promise">Sukurk vienintelę rožę ir trumpą laišką žmogui, kuris tau svarbus.</p>
-    </section>
+<main>
+  <section class="hero">
+    <div class="hero-image"></div>
 
-    <section class="form-card">
-      <label>Kam skirta?</label>
-      <input id="recipientType" placeholder="pvz. mamai, sesei, draugui" />
+    <h1>Šiandien pagalvojau apie tave...</h1>
 
-      <label>Kaip kreiptis kortelėje?</label>
-      <input id="dedication" placeholder="pvz. Sesutei Mildutei" />
+    <p>
+      Kartais žinome, ką jaučiame.<br>
+      Tik nerandame tinkamų žodžių.
+    </p>
 
-      <label>Nuo ko?</label>
-      <input id="sender" placeholder="pvz. Jonas" />
+    <p class="sub">
+      Sukurk vienintelę rožę ir trumpą laišką žmogui, kuris tau svarbus.
+    </p>
 
-      <label>Ką nori pasakyti?</label>
-      <textarea id="message" placeholder="pvz. labai tavęs pasiilgau, seniai nesimatėm"></textarea>
+    <a href="#create" class="hero-button">Pradėti</a>
+  </section>
 
-      <button id="generateBtn">Generuoti Rose Letter</button>
-    </section>
+  <section id="create" class="form-card">
+    <h2>Sukurk Rose Letter</h2>
 
-    <section id="preview" class="preview hidden">
-      <div class="rose-card">
-        <div class="rose-placeholder">🌹</div>
-        <p id="letterText"></p>
-        <h3 id="dedicationText"></h3>
-        <h4 id="senderText"></h4>
-        <small>RoseForYou.lt</small>
-      </div>
+    <input id="dedication" placeholder="Kam? Pvz. Sesutei Mildutei" />
+    <input id="sender" placeholder="Nuo ko? Pvz. Jono" />
+    <textarea id="message" placeholder="Ką nori pasakyti?"></textarea>
 
-      <div class="actions">
-        <button>Patinka</button>
-        <button>Perkurti</button>
-        <button>Redaguoti laišką</button>
-      </div>
-    </section>
-  </main>
+    <button id="generateBtn">Generuoti rožę</button>
+  </section>
 
-  <script src="script.js"></script>
+  <section id="preview" class="preview hidden">
+    <h2>Tavo Rose Letter</h2>
+    <div class="result-card">
+      <div class="rose-symbol">🌹</div>
+      <p id="letterText"></p>
+      <h3 id="dedicationText"></h3>
+      <h4 id="senderText"></h4>
+      <small>RoseForYou.lt</small>
+    </div>
+  </section>
+</main>
+
+<script src="script.js"></script>
 </body>
 </html>
