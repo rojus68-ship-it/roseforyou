@@ -1,73 +1,53 @@
 <!DOCTYPE html>
 <html lang="lt">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rose For You</title>
-
-<style>
-body{
-    margin:0;
-    background:#080808;
-    color:#f2e3b3;
-    font-family: Georgia, serif;
-    text-align:center;
-}
-
-.hero{
-    max-width:700px;
-    margin:40px auto;
-}
-
-.hero img{
-    width:100%;
-    display:block;
-}
-
-h1{
-    font-size:54px;
-    margin-top:30px;
-    margin-bottom:20px;
-}
-
-p{
-    font-size:22px;
-    line-height:1.7;
-    max-width:700px;
-    margin:auto;
-    color:#d8cba1;
-}
-
-.button{
-    display:inline-block;
-    margin-top:40px;
-    padding:20px 50px;
-    border-radius:12px;
-    background:#c89b3c;
-    color:black;
-    text-decoration:none;
-    font-size:24px;
-    font-weight:bold;
-}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rose For You</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-<div class="hero">
-<img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?q=80&w=1200">
-</div>
+  <main class="page">
+    <section class="hero">
+      <h1>Šiandien pagalvojau apie tave...</h1>
+      <p>Kartais žinome, ką jaučiame. Tik nerandame tinkamų žodžių.</p>
+      <p class="promise">Sukurk vienintelę rožę ir trumpą laišką žmogui, kuris tau svarbus.</p>
+    </section>
 
-<h1>Šiandien pagalvojau apie tave...</h1>
+    <section class="form-card">
+      <label>Kam skirta?</label>
+      <input id="recipientType" placeholder="pvz. mamai, sesei, draugui" />
 
-<p>
-Kartais žinome, ką jaučiame.<br>
-Tik nerandame tinkamų žodžių.
-</p>
+      <label>Kaip kreiptis kortelėje?</label>
+      <input id="dedication" placeholder="pvz. Sesutei Mildutei" />
 
-<a href="#" class="button">
-Sukurti Rose Letter
-</a>
+      <label>Nuo ko?</label>
+      <input id="sender" placeholder="pvz. Jonas" />
 
+      <label>Ką nori pasakyti?</label>
+      <textarea id="message" placeholder="pvz. labai tavęs pasiilgau, seniai nesimatėm"></textarea>
+
+      <button id="generateBtn">Generuoti Rose Letter</button>
+    </section>
+
+    <section id="preview" class="preview hidden">
+      <div class="rose-card">
+        <div class="rose-placeholder">🌹</div>
+        <p id="letterText"></p>
+        <h3 id="dedicationText"></h3>
+        <h4 id="senderText"></h4>
+        <small>RoseForYou.lt</small>
+      </div>
+
+      <div class="actions">
+        <button>Patinka</button>
+        <button>Perkurti</button>
+        <button>Redaguoti laišką</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
