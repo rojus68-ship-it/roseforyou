@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    background: #080808;
+    color: #f4e4b3;
+    font-family: Georgia, serif;
+}
+
+.page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 22px;
+    line-height: 1.6;
+}
+
+.promise {
+    margin-top: 25px;
+    font-style: italic;
+}
+
+.form-card {
+    background: #111;
+    border: 1px solid #2a2a2a;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+label {
+    display: block;
+    margin-top: 18px;
+    margin-bottom: 8px;
+}
+
+input,
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid #333;
+    background: #181818;
+    color: white;
+}
+
+textarea {
+    min-height: 120px;
+}
+
+button {
+    margin-top: 25px;
+    background: #c9a34a;
+    color: black;
+    border: none;
+    padding: 16px 24px;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.preview {
+    margin-top: 50px;
+}
+
+.hidden {
+    display: none;
+}
+
+.rose-card {
+    background: #111;
+    border-radius: 24px;
+    padding: 40px;
+    text-align: center;
+    border: 1px solid #2a2a2a;
+}
+
+.rose-placeholder {
+    font-size: 90px;
+    margin-bottom: 20px;
+}
+
+#letterText {
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+.actions {
+    text-align: center;
+}
