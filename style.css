@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap');
+
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{
@@ -42,11 +44,7 @@ nav a{margin-left:26px;color:#5f342b;text-decoration:none;font-size:14px}
   margin:0 0 20px;
   color:#8f4f57;
 }
-.hero-text p{
-  font-size:18px;
-  line-height:1.45;
-  margin:7px 0;
-}
+.hero-text p{font-size:18px;line-height:1.45;margin:7px 0}
 .hero-text h2{
   font-size:23px;
   line-height:1.35;
@@ -55,6 +53,7 @@ nav a{margin-left:26px;color:#5f342b;text-decoration:none;font-size:14px}
   font-weight:normal;
 }
 .soft{font-style:italic;color:#8a6b5b}
+
 .primary-btn,button{
   display:inline-block;
   margin-top:24px;
@@ -88,6 +87,7 @@ nav a{margin-left:26px;color:#5f342b;text-decoration:none;font-size:14px}
 .create-card h2{font-size:34px;margin:6px 0 8px;color:#8f4f57}
 .intro{font-size:17px;color:#7a5e52}
 label{display:block;margin-top:15px;margin-bottom:6px;color:#6a4439;font-size:14px}
+
 input,textarea,select{
   width:100%;
   padding:12px 14px;
@@ -100,9 +100,15 @@ input,textarea,select{
 }
 textarea{min-height:95px}
 
-.side-note{align-self:center;text-align:center;padding:26px}
+.side-note{
+  align-self:center;
+  text-align:center;
+  padding:26px;
+}
 .small-rose{
-  width:220px;height:290px;margin:0 auto 22px;
+  width:220px;
+  height:290px;
+  margin:0 auto 22px;
   border-radius:28px;
   background-image:url("hero.png");
   background-size:cover;
@@ -110,7 +116,16 @@ textarea{min-height:95px}
   box-shadow:0 18px 45px rgba(151,91,73,.16);
 }
 .small-rose:after{display:none}
-.side-note p{font-size:20px;line-height:1.42;color:#8f4f57}
+
+.side-note p{
+  font-family:'Cormorant Garamond',serif;
+  font-size:26px;
+  line-height:1.45;
+  font-style:italic;
+  font-weight:500;
+  color:#8f4f57;
+  letter-spacing:.2px;
+}
 
 @media(max-width:850px){
   .topbar nav{display:none}
