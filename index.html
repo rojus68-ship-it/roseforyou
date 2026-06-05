@@ -8,42 +8,80 @@
 </head>
 <body>
 
+<header class="topbar">
+  <div class="logo">Rose For You</div>
+  <nav>
+    <a href="#how">Kaip tai veikia</a>
+    <a href="#examples">Pavyzdžiai</a>
+    <a href="#about">Apie</a>
+  </nav>
+</header>
+
 <main>
   <section class="hero">
-    <div class="hero-image"></div>
+    <div class="hero-rose"></div>
 
-    <h1>Šiandien pagalvojau apie tave...</h1>
+    <div class="hero-text">
+      <h1>Šiandien pagalvojau apie tave...</h1>
 
-    <p>
-      Kartais žinome, ką jaučiame.<br>
-      Tik nerandame tinkamų žodžių.
-    </p>
+      <p>Kartais žinome, ką jaučiame.</p>
+      <p>Tik nerandame tinkamų žodžių.</p>
 
-    <p class="sub">
-      Sukurk vienintelę rožę ir trumpą laišką žmogui, kuris tau svarbus.
-    </p>
+      <h2>Sukurk unikalią rožę ir trumpą laišką tam, apie kurį šiandien pagalvojai.</h2>
 
-    <a href="#create" class="hero-button">Pradėti</a>
+      <p class="soft">
+        mylimam žmogui, draugui ar šeimos nariui —<br>
+        kiekviena rožė pasakoja tai, ko kartais nepavyksta pasakyti žodžiais.
+      </p>
+
+      <a class="primary-btn" href="#create">Pradėti kurti</a>
+    </div>
   </section>
 
-  <section id="create" class="form-card">
-    <h2>Sukurk Rose Letter</h2>
+  <section id="create" class="create-section">
+    <div class="create-card">
+      <div>
+        <p class="eyebrow">Rose Letter</p>
+        <h2>Sukurk savo rožę</h2>
+        <p class="intro">
+          Įrašyk kelis žodžius. Sistema sukurs rožę ir trumpą laišką pagal tavo mintį.
+        </p>
+      </div>
 
-    <input id="dedication" placeholder="Kam? Pvz. Sesutei Mildutei" />
-    <input id="sender" placeholder="Nuo ko? Pvz. Jono" />
-    <textarea id="message" placeholder="Ką nori pasakyti?"></textarea>
+      <form>
+        <label>Kam skirta ši rožė?</label>
+        <input placeholder="pvz. mamai, sesei, draugui" />
 
-    <button id="generateBtn">Generuoti rožę</button>
-  </section>
+        <label>Kaip kreiptis kortelėje?</label>
+        <input placeholder="pvz. Sesutei Mildutei" />
 
-  <section id="preview" class="preview hidden">
-    <h2>Tavo Rose Letter</h2>
-    <div class="result-card">
-      <div class="rose-symbol">🌹</div>
-      <p id="letterText"></p>
-      <h3 id="dedicationText"></h3>
-      <h4 id="senderText"></h4>
-      <small>RoseForYou.lt</small>
+        <label>Nuo ko?</label>
+        <input placeholder="pvz. Jono" />
+
+        <label>Ką norėtum pasakyti?</label>
+        <textarea placeholder="pvz. labai tavęs pasiilgau, seniai nesimatėm"></textarea>
+
+        <label>Rožės nuotaika</label>
+        <select>
+          <option>Švelni</option>
+          <option>Romantiška</option>
+          <option>Dėkingumo</option>
+          <option>Draugystės</option>
+          <option>Ilgesio</option>
+        </select>
+
+        <button type="button" id="generateBtn">Sukurti rožę ir laišką</button>
+      </form>
+    </div>
+
+    <div class="side-note">
+      <div class="small-rose"></div>
+      <p>
+        Kartais viena rožė<br>
+        ir trumpas laiškas<br>
+        tampa gražiausiu būdu<br>
+        pasakyti tai, ką jauti.
+      </p>
     </div>
   </section>
 </main>
