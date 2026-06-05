@@ -9,111 +9,115 @@ body{
 .topbar{
   position:fixed;top:0;left:0;right:0;z-index:10;
   display:flex;justify-content:space-between;align-items:center;
-  padding:22px 7vw;
-  background:rgba(255,247,239,.88);
+  padding:16px 7vw;
+  background:rgba(255,247,239,.9);
   backdrop-filter:blur(12px);
 }
-.logo{text-transform:uppercase;letter-spacing:3px;font-size:22px;color:#b88745}
-nav a{margin-left:32px;color:#5f342b;text-decoration:none;font-size:17px}
+.logo{text-transform:uppercase;letter-spacing:3px;font-size:18px;color:#b88745}
+nav a{margin-left:26px;color:#5f342b;text-decoration:none;font-size:14px}
 
 .hero{
-  min-height:100vh;
+  min-height:auto;
   display:grid;
-  grid-template-columns:1.15fr .85fr;
-  gap:60px;
+  grid-template-columns:1.1fr .9fr;
+  gap:40px;
   align-items:center;
-  padding:115px 7vw 60px;
+  padding:88px 7vw 42px;
   background:linear-gradient(135deg,#fffaf4,#f8d8cf);
 }
 .hero-rose{
-  min-height:720px;
-  border-radius:36px;
+  min-height:520px;
+  border-radius:30px;
   background-image:url("hero.png");
   background-size:cover;
   background-position:center;
   background-repeat:no-repeat;
-  box-shadow:0 32px 90px rgba(173,93,82,.18);
+  box-shadow:0 26px 70px rgba(173,93,82,.16);
 }
 .hero-rose:after{display:none}
 
 .hero-text h1{
-  font-size:clamp(48px,6vw,86px);
+  font-size:clamp(36px,4.2vw,64px);
   line-height:1.05;
-  margin:0 0 30px;
+  margin:0 0 20px;
   color:#8f4f57;
 }
-.hero-text p{font-size:23px;line-height:1.45;margin:8px 0}
+.hero-text p{
+  font-size:18px;
+  line-height:1.45;
+  margin:7px 0;
+}
 .hero-text h2{
-  font-size:30px;
+  font-size:23px;
   line-height:1.35;
-  margin:34px 0 24px;
+  margin:26px 0 18px;
   color:#a36d20;
   font-weight:normal;
 }
 .soft{font-style:italic;color:#8a6b5b}
 .primary-btn,button{
   display:inline-block;
-  margin-top:30px;
-  padding:18px 44px;
+  margin-top:24px;
+  padding:14px 34px;
   border-radius:999px;
   background:linear-gradient(135deg,#ead08b,#c79645);
   color:#3a240d;
   border:none;
   text-decoration:none;
-  font-size:18px;
+  font-size:15px;
   font-weight:bold;
   cursor:pointer;
-  box-shadow:0 18px 36px rgba(176,121,47,.22);
+  box-shadow:0 14px 28px rgba(176,121,47,.18);
 }
 
 .create-section{
   display:grid;
-  grid-template-columns:1.2fr .8fr;
-  gap:50px;
-  padding:90px 8vw;
+  grid-template-columns:1.15fr .85fr;
+  gap:38px;
+  padding:58px 8vw;
   background:#fffaf5;
 }
 .create-card{
   background:white;
-  border-radius:34px;
-  padding:48px;
-  box-shadow:0 30px 80px rgba(151,91,73,.16);
+  border-radius:28px;
+  padding:32px;
+  box-shadow:0 24px 60px rgba(151,91,73,.13);
   border:1px solid rgba(201,150,69,.22);
 }
-.eyebrow{text-transform:uppercase;letter-spacing:3px;color:#b88745;font-size:13px}
-.create-card h2{font-size:46px;margin:8px 0 10px;color:#8f4f57}
-.intro{font-size:20px;color:#7a5e52}
-label{display:block;margin-top:20px;margin-bottom:8px;color:#6a4439}
+.eyebrow{text-transform:uppercase;letter-spacing:3px;color:#b88745;font-size:12px}
+.create-card h2{font-size:34px;margin:6px 0 8px;color:#8f4f57}
+.intro{font-size:17px;color:#7a5e52}
+label{display:block;margin-top:15px;margin-bottom:6px;color:#6a4439;font-size:14px}
 input,textarea,select{
   width:100%;
-  padding:17px 18px;
-  border-radius:18px;
+  padding:12px 14px;
+  border-radius:14px;
   border:1px solid #ead7c7;
   background:#fff8f3;
   color:#4b2e24;
-  font-size:17px;
+  font-size:15px;
   font-family:Georgia,serif;
 }
-textarea{min-height:130px}
+textarea{min-height:95px}
 
-.side-note{align-self:center;text-align:center;padding:40px}
+.side-note{align-self:center;text-align:center;padding:26px}
 .small-rose{
-  width:280px;height:360px;margin:0 auto 30px;
-  border-radius:34px;
+  width:220px;height:290px;margin:0 auto 22px;
+  border-radius:28px;
   background-image:url("hero.png");
   background-size:cover;
   background-position:center;
-  box-shadow:0 24px 60px rgba(151,91,73,.18);
+  box-shadow:0 18px 45px rgba(151,91,73,.16);
 }
 .small-rose:after{display:none}
-.side-note p{font-size:25px;line-height:1.45;color:#8f4f57}
+.side-note p{font-size:20px;line-height:1.42;color:#8f4f57}
 
 @media(max-width:850px){
   .topbar nav{display:none}
   .hero,.create-section{
     grid-template-columns:1fr;
-    padding-left:24px;
-    padding-right:24px;
+    padding-left:22px;
+    padding-right:22px;
   }
-  .hero-rose{min-height:430px}
+  .hero-rose{min-height:390px}
 }
