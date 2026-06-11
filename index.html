@@ -50,19 +50,19 @@
 
       <form>
         <label>Kam skirta ši rožė?</label>
-        <input placeholder="pvz. mamai, sesei, draugui" />
+        <input id="recipient" placeholder="pvz. mamai, sesei, draugui" />
 
         <label>Kaip kreiptis kortelėje?</label>
-        <input placeholder="pvz. Sesutei Mildutei" />
+        <input id="dedication" placeholder="pvz. Sesutei Mildutei" />
 
         <label>Nuo ko?</label>
-        <input placeholder="pvz. Jono" />
+        <input id="sender" placeholder="pvz. Jono" />
 
         <label>Ką norėtum pasakyti?</label>
-        <textarea placeholder="pvz. labai tavęs pasiilgau, seniai nesimatėm"></textarea>
+        <textarea id="message" placeholder="pvz. labai tavęs pasiilgau, seniai nesimatėm"></textarea>
 
         <label>Rožės nuotaika</label>
-        <select>
+        <select id="mood">
           <option>Švelni</option>
           <option>Romantiška</option>
           <option>Dėkingumo</option>
@@ -82,6 +82,25 @@
         tampa gražiausiu būdu<br>
         pasakyti tai, ką jauti.
       </p>
+    </div>
+  </section>
+
+  <section id="preview" class="preview-section hidden">
+    <div class="preview-card">
+      <div class="preview-rose"></div>
+
+      <h2 id="dedicationText">Sesutei Mildutei</h2>
+
+      <div class="preview-letter">
+        <p id="letterText">Laiško tekstas...</p>
+      </div>
+
+      <p id="senderText">— Jonas</p>
+
+      <div class="preview-actions">
+        <button onclick="location.reload()">Kurti iš naujo</button>
+        <button class="primary-btn">Išsaugoti savo rožę</button>
+      </div>
     </div>
   </section>
 </main>
