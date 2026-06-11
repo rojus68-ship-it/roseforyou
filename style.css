@@ -30,13 +30,13 @@ textarea{min-height:74px}
 .small-rose{width:140px;height:180px;margin:0 auto 16px;border-radius:18px;background-image:url("hero.png");background-size:cover;background-position:center;box-shadow:0 14px 35px rgba(151,91,73,.14)}
 .side-note p{
   font-family:'Cormorant Infant',serif;
-  font-size:17px;
-  line-height:1.78;
+  font-size:15px;
+  line-height:1.9;
   font-style:italic;
   font-weight:400;
   color:#9b6f72;
   letter-spacing:.1px;
-  max-width:260px;
+  max-width:240px;
   margin:0 auto;
 }
 
@@ -53,4 +53,5 @@ textarea{min-height:74px}
   .create-card{max-width:100%;padding:24px}
   input,textarea,select{font-size:16px;padding:13px 14px}
   label{font-size:14px}
+  .side-note p{font-size:17px;line-height:1.8;max-width:260px}
 }
