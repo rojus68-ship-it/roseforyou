@@ -1,28 +1,23 @@
 const btn = document.getElementById("generateBtn");
 
 btn.addEventListener("click", () => {
-
-  const dedication =
-    document.getElementById("dedication").value;
-
-  const sender =
-    document.getElementById("sender").value;
-
-  const preview =
-    document.getElementById("preview");
-
-  document.getElementById("letterText").innerText =
-    "Kartais nereikia daug žodžių. Užtenka priminti, kad galvojau apie tave.";
+  const dedication = document.getElementById("dedication").value;
+  const sender = document.getElementById("sender").value;
+  const message = document.getElementById("message").value;
 
   document.getElementById("dedicationText").innerText =
-    dedication;
+    dedication || "Brangiam žmogui";
+
+  document.getElementById("letterText").innerText =
+    message ||
+    "Kartais nereikia daug žodžių. Užtenka priminti, kad galvojau apie tave.";
 
   document.getElementById("senderText").innerText =
-    "Nuo " + sender;
+    "— " + (sender || "Anonimas");
 
-  preview.classList.remove("hidden");
+  document.getElementById("preview").classList.remove("hidden");
 
-  preview.scrollIntoView({
+  document.getElementById("preview").scrollIntoView({
     behavior: "smooth"
   });
 });
