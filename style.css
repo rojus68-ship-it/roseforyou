@@ -1,188 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap');
 
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{
-  margin:0;
-  font-family:Georgia,serif;
-  background:#fff7ef;
-  color:#4b2e24;
-}
-.topbar{
-  position:fixed;top:0;left:0;right:0;z-index:10;
-  display:flex;justify-content:space-between;align-items:center;
-  padding:14px 7vw;
-  background:rgba(255,247,239,.92);
-  backdrop-filter:blur(12px);
-}
+body{margin:0;font-family:Georgia,serif;background:#fff7ef;color:#4b2e24}
+
+.topbar{position:fixed;top:0;left:0;right:0;z-index:10;display:flex;justify-content:space-between;align-items:center;padding:14px 7vw;background:rgba(255,247,239,.92);backdrop-filter:blur(12px)}
 .logo{text-transform:uppercase;letter-spacing:3px;font-size:17px;color:#b88745}
 nav a{margin-left:24px;color:#5f342b;text-decoration:none;font-size:14px}
 
-.hero{
-  max-width:1120px;
-  margin:0 auto;
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:28px;
-  align-items:center;
-  padding:76px 34px 34px;
-  background:linear-gradient(135deg,#fffaf4,#f8d8cf);
-}
-.hero-rose{
-  min-height:360px;
-  border-radius:24px;
-  background-image:url("hero.png");
-  background-size:cover;
-  background-position:center;
-  box-shadow:0 20px 55px rgba(173,93,82,.14);
-}
-.hero-text h1{
-  font-size:clamp(30px,3.5vw,48px);
-  line-height:1.05;
-  margin:0 0 14px;
-  color:#8f4f57;
-}
-.hero-text p{
-  font-size:15px;
-  line-height:1.42;
-  margin:5px 0;
-}
-.hero-text h2{
-  font-size:18px;
-  line-height:1.32;
-  margin:18px 0 12px;
-  color:#a36d20;
-  font-weight:normal;
-}
-.soft{font-style:italic;color:#8a6b5b}
-.primary-btn,button{
-  display:inline-block;
-  margin-top:18px;
-  padding:11px 28px;
-  border-radius:999px;
-  background:linear-gradient(135deg,#ead08b,#c79645);
-  color:#3a240d;
-  border:none;
-  text-decoration:none;
-  font-size:14px;
-  font-weight:bold;
-  cursor:pointer;
-  box-shadow:0 12px 24px rgba(176,121,47,.16);
-}
+.hero{max-width:1120px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center;padding:60px 34px 20px;background:linear-gradient(135deg,#fffaf4,#f8d8cf)}
+.hero-rose{min-height:320px;border-radius:24px;background-image:url("hero.png");background-size:cover;background-position:center;box-shadow:0 20px 55px rgba(173,93,82,.14)}
+.hero-text h1{font-size:clamp(28px,3vw,42px);line-height:1.05;margin:0 0 14px;color:#8f4f57}
+.hero-text p{font-size:15px;line-height:1.42;margin:5px 0}
+.hero-text h2{font-size:17px;line-height:1.32;margin:18px 0 12px;color:#b38752;font-weight:normal}
+.soft{font-family:'Playfair Display',serif;font-size:18px;font-style:italic;color:#8a6b5b;line-height:1.45}
 
-.create-section{
-  max-width:1120px;
-  margin:0 auto;
-  display:grid;
-  grid-template-columns:1fr .75fr;
-  gap:26px;
-  padding:36px 34px;
-  background:#fffaf5;
-}
-.create-card{
-  max-width:640px;
-  background:white;
-  border-radius:24px;
-  padding:22px;
-  box-shadow:0 18px 45px rgba(151,91,73,.11);
-  border:1px solid rgba(201,150,69,.2);
-}
-.eyebrow{
-  text-transform:uppercase;
-  letter-spacing:3px;
-  color:#b88745;
-  font-size:10px;
-}
-.create-card h2{
-  font-size:27px;
-  margin:4px 0 6px;
-  color:#8f4f57;
-}
-.intro{
-  font-size:14px;
-  color:#7a5e52;
-  margin:0 0 8px;
-}
-label{
-  display:block;
-  margin-top:11px;
-  margin-bottom:4px;
-  color:#6a4439;
-  font-size:12px;
-}
-input,textarea,select{
-  width:100%;
-  padding:9px 11px;
-  border-radius:11px;
-  border:1px solid #ead7c7;
-  background:#fff8f3;
-  color:#4b2e24;
-  font-size:13px;
-  font-family:Georgia,serif;
-}
+.primary-btn,button{display:inline-block;margin-top:18px;padding:11px 28px;border-radius:999px;background:linear-gradient(135deg,#ead08b,#c79645);color:#3a240d;border:none;text-decoration:none;font-size:14px;font-weight:bold;cursor:pointer;box-shadow:0 12px 24px rgba(176,121,47,.16)}
+
+.create-section{max-width:1120px;margin:0 auto;display:grid;grid-template-columns:1fr .75fr;gap:26px;padding:36px 34px;background:#fffaf5}
+.create-card{max-width:640px;background:white;border-radius:24px;padding:22px;box-shadow:0 18px 45px rgba(151,91,73,.11);border:1px solid rgba(201,150,69,.2)}
+.eyebrow{text-transform:uppercase;letter-spacing:3px;color:#b88745;font-size:10px}
+.create-card h2{font-size:27px;margin:4px 0 6px;color:#8f4f57}
+.intro{font-size:14px;color:#7a5e52;margin:0 0 8px}
+label{display:block;margin-top:11px;margin-bottom:4px;color:#6a4439;font-size:12px}
+input,textarea,select{width:100%;padding:9px 11px;border-radius:11px;border:1px solid #ead7c7;background:#fff8f3;color:#4b2e24;font-size:13px;font-family:Georgia,serif}
 textarea{min-height:74px}
 
-.side-note{
-  align-self:center;
-  text-align:center;
-  padding:16px;
-}
-.small-rose{
-  width:140px;
-  height:180px;
-  margin:0 auto 16px;
-  border-radius:18px;
-  background-image:url("hero.png");
-  background-size:cover;
-  background-position:center;
-  box-shadow:0 14px 35px rgba(151,91,73,.14);
-}
-.side-note p{
-  font-family:'Cormorant Garamond',serif;
-  font-size:19px;
-  line-height:1.38;
-  font-style:italic;
-  font-weight:500;
-  color:#8f4f57;
-  letter-spacing:.2px;
-}
+.side-note{align-self:center;text-align:center;padding:16px}
+.small-rose{width:140px;height:180px;margin:0 auto 16px;border-radius:18px;background-image:url("hero.png");background-size:cover;background-position:center;box-shadow:0 14px 35px rgba(151,91,73,.14)}
+.side-note p{font-family:'Playfair Display',serif;font-size:18px;line-height:1.65;font-style:italic;font-weight:400;color:#9b6f72;letter-spacing:.1px;max-width:260px;margin:0 auto}
 
 @media(max-width:850px){
-  .topbar{
-    padding:14px 22px;
-  }
+  .topbar{padding:14px 22px}
   .topbar nav{display:none}
   .logo{font-size:15px}
-
-  .hero,.create-section{
-    grid-template-columns:1fr;
-    padding-left:22px;
-    padding-right:22px;
-  }
-  .hero{
-    padding-top:78px;
-  }
-  .hero-rose{
-    min-height:320px;
-  }
-  .hero-text h1{
-    font-size:38px;
-  }
-  .hero-text p{
-    font-size:17px;
-  }
-  .hero-text h2{
-    font-size:20px;
-  }
-  .create-card{
-    max-width:100%;
-    padding:24px;
-  }
-  input,textarea,select{
-    font-size:16px;
-    padding:13px 14px;
-  }
-  label{
-    font-size:14px;
-  }
+  .hero,.create-section{grid-template-columns:1fr;padding-left:22px;padding-right:22px}
+  .hero{padding-top:78px}
+  .hero-rose{min-height:320px}
+  .hero-text h1{font-size:38px}
+  .hero-text p{font-size:17px}
+  .hero-text h2{font-size:20px}
+  .create-card{max-width:100%;padding:24px}
+  input,textarea,select{font-size:16px;padding:13px 14px}
+  label{font-size:14px}
 }
