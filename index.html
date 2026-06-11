@@ -53,10 +53,10 @@
         <input id="recipient" placeholder="pvz. mamai, sesei, draugui" />
 
         <label>Kaip kreiptis kortelėje?</label>
-        <input id="dedication" placeholder="pvz. Sesutei Mildutei" />
+        <input id="dedication" placeholder="pvz. Jonui, Mildutei, Brangiai mamai" />
 
         <label>Nuo ko?</label>
-        <input id="sender" placeholder="pvz. Jono" />
+        <input id="sender" placeholder="pvz. Juozo, Jono, dukros Eglės" />
 
         <label>Ką norėtum pasakyti?</label>
         <textarea id="message" placeholder="pvz. labai tavęs pasiilgau, seniai nesimatėm"></textarea>
@@ -89,22 +89,23 @@
     <div class="preview-card">
       <div class="preview-rose"></div>
 
-      <h2 id="dedicationText">Sesutei Mildutei</h2>
+      <h2 id="dedicationText">Brangiam žmogui</h2>
 
       <div class="preview-letter">
-        <p id="letterText">Laiško tekstas...</p>
+        <p id="letterText">Šiandien pagalvojau apie tave...</p>
       </div>
 
-      <p id="senderText">— Jonas</p>
+      <p id="senderText">Nuo žmogaus, kuris pagalvojo apie tave</p>
 
       <div class="preview-actions">
         <button onclick="location.reload()">Kurti iš naujo</button>
-        <button class="primary-btn">Išsaugoti savo rožę</button>
+        <button class="primary-btn" id="downloadBtn">Išsaugoti savo rožę</button>
       </div>
     </div>
   </section>
 </main>
 
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
