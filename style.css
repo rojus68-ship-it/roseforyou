@@ -19,45 +19,53 @@ body{
 nav a{margin-left:26px;color:#5f342b;text-decoration:none;font-size:14px}
 
 .hero{
+  max-width:1200px;
+  margin:0 auto;
   min-height:auto;
   display:grid;
-  grid-template-columns:1.1fr .9fr;
-  gap:40px;
+  grid-template-columns:1.05fr .95fr;
+  gap:30px;
   align-items:center;
-  padding:88px 7vw 42px;
+  padding:88px 40px 42px;
   background:linear-gradient(135deg,#fffaf4,#f8d8cf);
 }
 .hero-rose{
-  min-height:520px;
-  border-radius:30px;
+  min-height:430px;
+  border-radius:28px;
   background-image:url("hero.png");
   background-size:cover;
   background-position:center;
   background-repeat:no-repeat;
-  box-shadow:0 26px 70px rgba(173,93,82,.16);
+  box-shadow:0 24px 65px rgba(173,93,82,.15);
 }
 .hero-rose:after{display:none}
 
 .hero-text h1{
-  font-size:clamp(36px,4.2vw,64px);
+  font-size:clamp(34px,4vw,58px);
   line-height:1.05;
-  margin:0 0 20px;
+  margin:0 0 18px;
   color:#8f4f57;
 }
-.hero-text p{font-size:18px;line-height:1.45;margin:7px 0}
+.hero-text p{
+  font-size:17px;
+  line-height:1.45;
+  margin:6px 0;
+}
 .hero-text h2{
-  font-size:23px;
+  font-size:21px;
   line-height:1.35;
-  margin:26px 0 18px;
+  margin:24px 0 16px;
   color:#a36d20;
   font-weight:normal;
 }
-.soft{font-style:italic;color:#8a6b5b}
-
+.soft{
+  font-style:italic;
+  color:#8a6b5b;
+}
 .primary-btn,button{
   display:inline-block;
-  margin-top:24px;
-  padding:14px 34px;
+  margin-top:22px;
+  padding:13px 32px;
   border-radius:999px;
   background:linear-gradient(135deg,#ead08b,#c79645);
   color:#3a240d;
@@ -70,57 +78,78 @@ nav a{margin-left:26px;color:#5f342b;text-decoration:none;font-size:14px}
 }
 
 .create-section{
+  max-width:1200px;
+  margin:0 auto;
   display:grid;
   grid-template-columns:1.15fr .85fr;
-  gap:38px;
-  padding:58px 8vw;
+  gap:30px;
+  padding:45px 40px;
   background:#fffaf5;
 }
 .create-card{
+  max-width:760px;
   background:white;
   border-radius:28px;
-  padding:32px;
-  box-shadow:0 24px 60px rgba(151,91,73,.13);
+  padding:26px;
+  box-shadow:0 22px 55px rgba(151,91,73,.12);
   border:1px solid rgba(201,150,69,.22);
 }
-.eyebrow{text-transform:uppercase;letter-spacing:3px;color:#b88745;font-size:12px}
-.create-card h2{font-size:34px;margin:6px 0 8px;color:#8f4f57}
-.intro{font-size:17px;color:#7a5e52}
-label{display:block;margin-top:15px;margin-bottom:6px;color:#6a4439;font-size:14px}
-
+.eyebrow{
+  text-transform:uppercase;
+  letter-spacing:3px;
+  color:#b88745;
+  font-size:11px;
+}
+.create-card h2{
+  font-size:32px;
+  margin:5px 0 8px;
+  color:#8f4f57;
+}
+.intro{
+  font-size:16px;
+  color:#7a5e52;
+}
+label{
+  display:block;
+  margin-top:14px;
+  margin-bottom:5px;
+  color:#6a4439;
+  font-size:13px;
+}
 input,textarea,select{
   width:100%;
-  padding:12px 14px;
-  border-radius:14px;
+  padding:11px 13px;
+  border-radius:13px;
   border:1px solid #ead7c7;
   background:#fff8f3;
   color:#4b2e24;
-  font-size:15px;
+  font-size:14px;
   font-family:Georgia,serif;
 }
-textarea{min-height:95px}
+textarea{
+  min-height:90px;
+}
 
 .side-note{
   align-self:center;
   text-align:center;
-  padding:26px;
+  padding:22px;
 }
 .small-rose{
-  width:220px;
-  height:290px;
-  margin:0 auto 22px;
-  border-radius:28px;
+  width:170px;
+  height:220px;
+  margin:0 auto 18px;
+  border-radius:22px;
   background-image:url("hero.png");
   background-size:cover;
   background-position:center;
   box-shadow:0 18px 45px rgba(151,91,73,.16);
 }
 .small-rose:after{display:none}
-
 .side-note p{
   font-family:'Cormorant Garamond',serif;
-  font-size:26px;
-  line-height:1.45;
+  font-size:22px;
+  line-height:1.42;
   font-style:italic;
   font-weight:500;
   color:#8f4f57;
@@ -134,5 +163,5 @@ textarea{min-height:95px}
     padding-left:22px;
     padding-right:22px;
   }
-  .hero-rose{min-height:390px}
+  .hero-rose{min-height:360px}
 }
