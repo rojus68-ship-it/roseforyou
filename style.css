@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,400;0,500;1,400;1,500&display=swap');
 
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -13,7 +13,7 @@ nav a{margin-left:24px;color:#5f342b;text-decoration:none;font-size:14px}
 .hero-text h1{font-size:clamp(28px,3vw,42px);line-height:1.05;margin:0 0 14px;color:#8f4f57}
 .hero-text p{font-size:15px;line-height:1.42;margin:5px 0}
 .hero-text h2{font-size:17px;line-height:1.32;margin:18px 0 12px;color:#b38752;font-weight:normal}
-.soft{font-family:'Playfair Display',serif;font-size:18px;font-style:italic;color:#8a6b5b;line-height:1.45}
+.soft{font-family:'Cormorant Infant',serif;font-size:18px;font-style:italic;color:#8a6b5b;line-height:1.5}
 
 .primary-btn,button{display:inline-block;margin-top:18px;padding:11px 28px;border-radius:999px;background:linear-gradient(135deg,#ead08b,#c79645);color:#3a240d;border:none;text-decoration:none;font-size:14px;font-weight:bold;cursor:pointer;box-shadow:0 12px 24px rgba(176,121,47,.16)}
 
@@ -28,7 +28,17 @@ textarea{min-height:74px}
 
 .side-note{align-self:center;text-align:center;padding:16px}
 .small-rose{width:140px;height:180px;margin:0 auto 16px;border-radius:18px;background-image:url("hero.png");background-size:cover;background-position:center;box-shadow:0 14px 35px rgba(151,91,73,.14)}
-.side-note p{font-family:'Playfair Display',serif;font-size:18px;line-height:1.65;font-style:italic;font-weight:400;color:#9b6f72;letter-spacing:.1px;max-width:260px;margin:0 auto}
+.side-note p{
+  font-family:'Cormorant Infant',serif;
+  font-size:17px;
+  line-height:1.78;
+  font-style:italic;
+  font-weight:400;
+  color:#9b6f72;
+  letter-spacing:.1px;
+  max-width:260px;
+  margin:0 auto;
+}
 
 @media(max-width:850px){
   .topbar{padding:14px 22px}
