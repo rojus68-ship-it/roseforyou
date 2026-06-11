@@ -23,11 +23,12 @@ btn.addEventListener("click", () => {
 });
 
 downloadBtn.addEventListener("click", async () => {
-  const card = document.querySelector(".preview-card");
+  const card = document.getElementById("roseCard");
 
   const canvas = await html2canvas(card, {
     backgroundColor: "#ffffff",
-    scale: 3
+    scale: 3,
+    useCORS: true
   });
 
   const link = document.createElement("a");
