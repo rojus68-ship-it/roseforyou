@@ -33,12 +33,58 @@ textarea{min-height:74px}
 .hidden{display:none}
 
 .preview-section{padding:70px 20px;background:#fffaf5}
-.preview-card{max-width:620px;margin:0 auto;background:white;padding:42px;border-radius:28px;text-align:center;box-shadow:0 20px 50px rgba(151,91,73,.12);border:1px solid rgba(201,150,69,.18)}
-.preview-rose{width:220px;height:280px;margin:0 auto 28px;border-radius:22px;background-image:url("hero.png");background-size:cover;background-position:center;box-shadow:0 16px 40px rgba(151,91,73,.14)}
-.preview-card h2{font-size:30px;color:#8f4f57;margin:0}
-.preview-letter{margin:28px auto;line-height:1.8;font-size:18px;color:#5f342b;max-width:460px}
-#senderText{font-style:italic;color:#8a6b5b;font-size:17px}
-.preview-actions{margin-top:28px;display:flex;justify-content:center;gap:14px;flex-wrap:wrap}
+.preview-wrap{max-width:700px;margin:0 auto;text-align:center}
+
+.rose-card{
+  max-width:620px;
+  margin:0 auto;
+  background:white;
+  padding:42px;
+  border-radius:28px;
+  text-align:center;
+  box-shadow:0 20px 50px rgba(151,91,73,.12);
+  border:1px solid rgba(201,150,69,.18);
+}
+
+.preview-rose{
+  width:220px;
+  height:280px;
+  margin:0 auto 28px;
+  border-radius:22px;
+  background-image:url("hero.png");
+  background-size:cover;
+  background-position:center;
+  box-shadow:0 16px 40px rgba(151,91,73,.14);
+}
+
+.rose-card h2{
+  font-size:30px;
+  color:#8f4f57;
+  margin:0;
+  font-weight:500;
+}
+
+.preview-letter{
+  margin:28px auto;
+  line-height:1.8;
+  font-size:18px;
+  color:#5f342b;
+  max-width:460px;
+}
+
+#senderText{
+  font-style:italic;
+  color:#8a6b5b;
+  font-size:17px;
+}
+
+.preview-actions{
+  margin-top:28px;
+  display:flex;
+  justify-content:center;
+  gap:14px;
+  flex-wrap:wrap;
+}
 
 @media(max-width:850px){
   .topbar{padding:14px 22px}
@@ -54,6 +100,6 @@ textarea{min-height:74px}
   input,textarea,select{font-size:16px;padding:13px 14px}
   label{font-size:14px}
   .side-note p{font-size:17px;line-height:1.8;max-width:260px}
-  .preview-card{padding:28px}
+  .rose-card{padding:28px}
   .preview-rose{width:190px;height:240px}
 }
